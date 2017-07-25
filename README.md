@@ -14,9 +14,9 @@ And then execute:
 
     $ bundle
 
-Or install it yourself as:
+<!-- Or install it yourself as:
 
-    $ gem install typograf_client
+    $ gem install typograf_client -->
 
 ## Usage
 
