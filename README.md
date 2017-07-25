@@ -23,7 +23,7 @@ And then execute:
 ```ruby
 text = 'Брат Фрэнсис Джерард из Юты, постившийся в пустыне, возможно, и не нашел бы священные документы, если бы не паломник с препоясанными чреслами.'
 
-puts RemoteTypograf::Request.new(text).result
+puts RemoteTypograf::Request.new(text).result #=> "<p>Брат Фрэнсис Джерард из&nbsp;Юты, постившийся в&nbsp;пустыне, возможно, и&nbsp;не&nbsp;нашел&nbsp;бы священные документы, если&nbsp;бы не&nbsp;паломник с&nbsp;препоясанными чреслами.<br />\n</p>" 
 ```
 
 ## Contributing
