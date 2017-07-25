@@ -7,7 +7,7 @@ A Ruby gem to get [Typograf webservice](https://www.artlebedev.ru/typograf/webse
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'typograf_client'
+gem 'typograf_client', :git => "git://github.com/pandalowry/typograf_client.git"
 ```
 
 And then execute:
