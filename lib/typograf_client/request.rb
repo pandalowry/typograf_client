@@ -9,16 +9,16 @@ module TypografClient
       @text = text
       @client = Savon.client(wsdl: 'http://typograf.artlebedev.ru/webservices/typograf.asmx?WSDL')
       @result = nil
-    end   
+    end
 
     def result
-      @result ||= get_response.to_s #not Nori object - pure String returns
+      @result ||= get_response.to_s # not object - pure String returns
     end
 
     private
 
     def get_response
-      response = @client.call(:process_text, message: {text: text})
+      response = @client.call(:process_text, message: { text: text })
       response.body[:process_text_response][:process_text_result]
     end
   end
